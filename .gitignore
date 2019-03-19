@@ -1,0 +1,3 @@
+src/ceph-monitor-operator/vendor/
+pkg/
+src/ceph-monitor-operator/.gitignore
