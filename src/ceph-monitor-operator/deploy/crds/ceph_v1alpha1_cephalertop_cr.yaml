@@ -1,0 +1,7 @@
+apiVersion: ceph.monstorak.org/v1alpha1
+kind: CephAlertOp
+metadata:
+  name: example-cephalertop
+spec:
+  # Add fields here
+  size: 3
