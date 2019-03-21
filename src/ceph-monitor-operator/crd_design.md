@@ -1,13 +1,13 @@
 ``` yaml
 # YAML
 
-apiVersion: "operator.monstor.org/v1alpha1"
+apiVersion: "operator.monstorak.org/v1alpha1"
 kind: #TBD
 metadata:
   # Name for this node
   name: #TBD
   # CRD is namespaced
-  namespace: #TBD
+  namespace: monstorak
   annotations:
     # Applied by operator when it creates/manages this object from a template.
     # When this is present, contents will be dynamically adjusted accd to the
@@ -15,7 +15,7 @@ metadata:
     # When this annotation is present, the admin may only modify
     # .spec.desiredState or delete the CR. Any other change will be
     # overwritten.
-    anthill.gluster.org/template: template-name
+    operator.monstorak.org/template: template-name
   version: <string>
 spec:
   # Nodes belong to a cluster
@@ -35,9 +35,6 @@ spec:
     ...
   nodeAffinity:
     # https://kubernetes.io/docs/concepts/configuration/assign-pod-node/#affinity-and-anti-affinity
-    # For admin created GlusterNodes, this needs to specify a node selector
-    # that matches exactly one node. For template-based GNs, this will inherit
-    # from the template.
     ...
 status:
   # TBD operator state
