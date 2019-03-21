@@ -50,5 +50,6 @@ rules:
   - ceph.monstorak.org
   resources:
   - '*'
+  - cephalertops
   verbs:
   - '*'

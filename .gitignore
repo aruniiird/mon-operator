@@ -1,3 +1,6 @@
 src/ceph-monitor-operator/vendor/
-pkg/
 src/ceph-monitor-operator/.gitignore
+src/ceph-monitor-operator/build/_output/
+pkg/
+!src/ceph-monitor-operator/pkg/
+
