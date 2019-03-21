@@ -1,3 +1,6 @@
+``` yaml
+# YAML
+
 apiVersion: "operator.monstor.org/v1alpha1"
 kind: #TBD
 metadata:
@@ -41,3 +44,4 @@ status:
   # Possible states: (enabled | deleting | disabled)
   # see other 'currentState' keys in other operators
   currentState: enabled
+```
